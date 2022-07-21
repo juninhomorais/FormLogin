@@ -18,3 +18,42 @@ h1, h2, h3, a {
 p {
     font-family: 'Roboto', sans-serif;
 }
+
+/* body */
+body {
+    background-color: #191816;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+/* logo */
+header img {
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+/* content area */
+section {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+section .left {
+    flex: 1;
+}
+section .left .form-area {
+    margin: 0 auto;
+    background-color: #24221f;
+    height: 400px;
+    width: 480px;
+    border-radius: 4px;
+}
+section .right {
+    background-image: url('../images/side-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: inherit;
+    flex: 1;
+}
