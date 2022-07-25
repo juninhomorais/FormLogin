@@ -11,11 +11,11 @@ a {
 
 /* fonts */
 
-h1, h2, h3, a {
+h1, h2, h3, h4, h5, h6, a, label {
     font-family: 'Poppins', sans-serif;
 }
 
-p {
+p, input {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -33,22 +33,112 @@ header img {
     top: 40px;
 }
 
-/* content area */
+/* section left */
 section {
     display: flex;
     align-items: center;
     height: inherit;
 }
+
 section .left {
     flex: 1;
 }
+
 section .left .form-area {
     margin: 0 auto;
     background-color: #24221f;
-    height: 400px;
-    width: 480px;
+    max-width: 500px;
     border-radius: 4px;
+    padding: 50px 100px;
 }
+
+/* form */
+.form-area .header-form {
+    margin-bottom: 15px;
+    color: #AFB6C2;
+}
+
+.form-area .form-title {
+    display: flex;
+    align-items: center;
+    color: #D4CCB6;
+    margin-bottom: 10px;
+}
+
+.form-area .form-title img {
+    margin-right: 8px;
+}
+
+.form-area form label {
+    display: block;
+    cursor: pointer;
+    color: #AFB6C2;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form-area form input {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #868686;
+    width: 100%;
+    border-radius: 4px;
+    padding: 14px;
+    outline: none;
+    transition: all 0.3s linear;
+    margin-bottom: 20px;
+}
+
+.form-area form input::placeholder {
+    color: #A9AFB9;
+}
+
+.form-area form input[type=checkbox] {
+    width: auto;
+}
+
+.form-area form input:focus {
+    border: 1px solid #FFDE88;
+}
+
+.form-area form .optinal-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-area form .optinal-area > a {
+    font-size: 14px;
+}
+
+.form-area form button {
+    background-color: #FFC632;
+    color: #473404;
+    border: 0;
+    width: 100%;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.form-area a,
+.form-area > p > a {
+    color: #FFC632;
+    font-weight: 600;
+}
+
+.form-area > p > a,
+.form-area > p {
+    color: #FFC632;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* section right */
 section .right {
     background-image: url('../images/side-image.jpg');
     background-repeat: no-repeat;
