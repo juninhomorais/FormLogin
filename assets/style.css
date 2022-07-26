@@ -101,13 +101,20 @@ section .left .form-area {
     border: 1px solid #FFDE88;
 }
 
-.form-area form .optinal-area {
+.form-area form .additional-area {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
 }
 
-.form-area form .optinal-area > a {
-    font-size: 14px;
+.form-area form .remember {
+    display: flex;
+    align-items: center;
+}
+
+.form-area form .remember input {
+    margin: 0 5px 0 0;
 }
 
 .form-area form button {
