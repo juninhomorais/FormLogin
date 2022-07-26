@@ -114,7 +114,28 @@ section .left .form-area {
 }
 
 .form-area form .remember input {
+    display: none;
+}
+
+.form-area form .remember input + label::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border: 1px solid #868686;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
     margin: 0 5px 0 0;
+    margin-bottom: 3px;
+}
+
+.form-area form .remember input:checked + label::before {
+    background-color: #FFC632;
+    background-image: url('./images/check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-color: #FFC632;
+    transition: all 0.3s linear;
 }
 
 .form-area form button {
