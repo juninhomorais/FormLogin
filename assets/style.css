@@ -47,9 +47,9 @@ section .left {
 section .left .form-area {
     margin: 0 auto;
     background-color: #24221f;
-    max-width: 500px;
+    max-width: 480px;
     border-radius: 4px;
-    padding: 50px 100px;
+    padding: 50px 80px;
 }
 
 /* form */
@@ -174,4 +174,26 @@ section .right {
     background-position: center;
     height: inherit;
     flex: 1;
+}
+
+/* responsive */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    section .left .form-area {
+        padding: 50px;
+        margin: 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section .right {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    section .left .form-area {
+        margin: 0 1.5rem;
+        padding: 40px 30px;
+    }
 }
