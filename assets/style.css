@@ -9,6 +9,16 @@ a {
     text-decoration: none;
 }
 
+/* variables */
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+    --input-border-color: #868686;
+  }
+
 /* fonts */
 
 h1, h2, h3, h4, h5, h6, a, label {
@@ -21,7 +31,7 @@ p, input {
 
 /* body */
 body {
-    background-color: #191816;
+    background-color: var(--background);
     height: 100vh;
     min-height: 100vh;
 }
@@ -46,7 +56,7 @@ section .left {
 
 section .left .form-area {
     margin: 0 auto;
-    background-color: #24221f;
+    background-color: var(--form-background);
     max-width: 480px;
     border-radius: 4px;
     padding: 50px 80px;
@@ -55,13 +65,13 @@ section .left .form-area {
 /* form */
 .form-area .header-form {
     margin-bottom: 15px;
-    color: #AFB6C2;
+    color: var(--text-base);
 }
 
 .form-area .form-title {
     display: flex;
     align-items: center;
-    color: #D4CCB6;
+    color: var(--text-title);
     margin-bottom: 10px;
 }
 
@@ -72,7 +82,7 @@ section .left .form-area {
 .form-area form label {
     display: block;
     cursor: pointer;
-    color: #AFB6C2;
+    color: var(--text-base);
     font-size: 14px;
     line-height: 24px;
 }
@@ -80,7 +90,7 @@ section .left .form-area {
 .form-area form input {
     background-color: transparent;
     color: #fff;
-    border: 1px solid #868686;
+    border: 1px solid var(--input-border-color);
     width: 100%;
     border-radius: 4px;
     padding: 14px;
@@ -98,7 +108,7 @@ section .left .form-area {
 }
 
 .form-area form input:focus {
-    border: 1px solid #FFDE88;
+    border: 1px solid var(--primary-color);
 }
 
 .form-area form .additional-area {
@@ -121,7 +131,7 @@ section .left .form-area {
     content: "";
     width: 13px;
     height: 13px;
-    border: 1px solid #868686;
+    border: 1px solid var(--input-border-color);
     border-radius: 4px;
     display: inline-block;
     vertical-align: middle;
@@ -130,16 +140,16 @@ section .left .form-area {
 }
 
 .form-area form .remember input:checked + label::before {
-    background-color: #FFC632;
+    background-color: var(--primary-color);
     background-image: url('./images/check.svg');
     background-repeat: no-repeat;
     background-size: contain;
-    border-color: #FFC632;
+    border-color: var(--primary-color);
     transition: all 0.3s linear;
 }
 
 .form-area form button {
-    background-color: #FFC632;
+    background-color: var(--primary-color);
     color: #473404;
     border: 0;
     width: 100%;
@@ -155,13 +165,13 @@ section .left .form-area {
 
 .form-area a,
 .form-area > p > a {
-    color: #FFC632;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
 .form-area > p > a,
 .form-area > p {
-    color: #FFC632;
+    color: var(--primary-color);
     text-align: center;
     font-size: 14px;
 }
