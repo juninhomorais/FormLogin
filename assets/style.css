@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 /* variables */
 :root {
     --text-base: #afb6c2;
@@ -151,7 +155,7 @@ section .left .form-area {
 .form-area form button {
     background-color: var(--primary-color);
     color: #473404;
-    border: 0;
+    border: 1px solid var(--primary-color);
     width: 100%;
     cursor: pointer;
     padding: 12px;
@@ -161,12 +165,17 @@ section .left .form-area {
     font-size: 15px;
     line-height: 27px;
     margin-bottom: 15px;
+    transition: all 0.3s linear;
+}
+
+.form-area form button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 .form-area a,
 .form-area > p > a {
     color: var(--primary-color);
-    font-weight: 600;
 }
 
 .form-area > p > a,
